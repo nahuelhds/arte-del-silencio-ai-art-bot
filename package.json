@@ -1,0 +1,16 @@
+{
+  "name": "foo-fighters-ai-art-bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "download": "node --es-module-specifier-resolution=node src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "wombo-dream-api": "^0.1.5"
+  }
+}
