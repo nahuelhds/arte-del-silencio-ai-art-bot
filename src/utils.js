@@ -35,13 +35,10 @@ async function publishToInstagram(imageBuffer, caption) {
   ig.state.generateDevice(process.env.IG_USERNAME);
   // ig.state.proxyUrl = process.env.IG_PROXY;
   await ig.account.login(process.env.IG_USERNAME, process.env.IG_PASSWORD);
-
-  const publishResult = await ig.publish.photo({
+  await ig.publish.photo({
     file: imageBuffer, // image buffer, you also can specify image from your disk using fs
     caption: caption, // nice caption (optional)
   });
-
-  console.log(publishResult); // publishResult.status should be "ok"
 }
 
 export { translateEn, getRandomStyle, prepareImage, publishToInstagram };
