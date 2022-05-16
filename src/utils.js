@@ -11,7 +11,7 @@ async function translateEn(text) {
 
 async function getRandomStyle(womboInstance) {
   const styles = await womboInstance.fetchStyles();
-  return styles[random(0, styles.length - 1)].id;
+  return styles[random(0, styles.length - 1)];
 }
 
 async function prepareImage(imageUrl) {
@@ -36,8 +36,8 @@ async function publishToInstagram(imageBuffer, caption) {
   // ig.state.proxyUrl = process.env.IG_PROXY;
   await ig.account.login(process.env.IG_USERNAME, process.env.IG_PASSWORD);
   await ig.publish.photo({
-    file: imageBuffer, // image buffer, you also can specify image from your disk using fs
-    caption: caption, // nice caption (optional)
+    file: imageBuffer,
+    caption: caption,
   });
 }
 

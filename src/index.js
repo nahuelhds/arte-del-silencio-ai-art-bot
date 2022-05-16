@@ -18,15 +18,18 @@ const INPUT_IMAGE_WEIGHT = ["LOW", "MEDIUM", "HIGH"];
 (async () => {
   try {
     const caption = captions[random(0, captions.length - 1)];
-    console.info(`Building image with caption: "${caption}"`);
+    console.info(
+      `Building image with caption from year ${caption.year}: "${caption.text}"`
+    );
 
     const api = WomboDreamApi.buildDefaultInstance();
 
-    let inputImage;
+    let person, weight, inputImage;
     if (random()) {
-      const sourcePath = "./assets/example.jpg";
+      person = people[random(0, people.length - 1)];
+      weight = INPUT_IMAGE_WEIGHT[random(0, 2)];
+      const sourcePath = person.coloredImage;
       const uploadedImageInfo = await api.uploadImage(readFileSync(sourcePath));
-      const weight = INPUT_IMAGE_WEIGHT[random(0, 2)];
       inputImage = {
         mediastore_id: uploadedImageInfo.id,
         weight,
@@ -35,12 +38,11 @@ const INPUT_IMAGE_WEIGHT = ["LOW", "MEDIUM", "HIGH"];
     } else {
       console.info(`Without base image`);
     }
+    const style = await getRandomStyle(api);
     const task = await api.generatePicture(
-      await translateEn(caption),
-      await getRandomStyle(api),
-      (task) => {
-        console.log(task.state, "stage", task.photo_url_list.length);
-      },
+      await translateEn(caption.text),
+      style.id,
+      () => null,
       inputImage
     );
     if (!task?.result.final) {
@@ -50,8 +52,17 @@ const INPUT_IMAGE_WEIGHT = ["LOW", "MEDIUM", "HIGH"];
     console.info("Image generated: ", task?.result.final);
 
     const imageBuffer = await prepareImage(task.result.final, TEMP_IMAGE_PATH);
-    await publishToInstagram(imageBuffer, caption);
-    console.info("Published to Instagram account successfully");
+    const imageDescription = `"${caption.text}" - Año ${
+      caption.year
+    }.\n\nEstilo: ${style.name}.\n${
+      person ? `Persona: ${person.name}.\nPeso: ${weight.toLowerCase()}.` : ""
+    }\n\n#marchadelsilencio2022`;
+
+    await publishToInstagram(imageBuffer, imageDescription);
+    console.info(
+      "Published to Instagram account successfully.",
+      imageDescription
+    );
   } catch (err) {
     console.error("An error occurred in the process", err);
   }
