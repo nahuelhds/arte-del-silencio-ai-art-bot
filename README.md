@@ -1,4 +1,4 @@
-# Arte por el silencio
+# Arte del Silencio
 
 Bot que crea imágenes con inteligencia artificial mezclando consignas de
 la [Marcha del Silencio](https://es.wikipedia.org/wiki/Marcha_del_Silencio_(Uruguay)) con las fotos de lxs
