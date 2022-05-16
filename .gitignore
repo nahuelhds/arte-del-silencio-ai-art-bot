@@ -105,5 +105,4 @@ dist
 
 .idea
 temp/*
-assets/images/*
 !.gitkeep

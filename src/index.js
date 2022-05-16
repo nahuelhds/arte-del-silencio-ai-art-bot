@@ -29,7 +29,7 @@ const INPUT_IMAGE_WEIGHT = ["LOW", "MEDIUM"]; // No HIGH
     if (random()) {
       person = people[random(0, people.length - 1)];
       weight = INPUT_IMAGE_WEIGHT[random(0, INPUT_IMAGE_WEIGHT.length - 1)];
-      const sourcePath = person.coloredImage;
+      const sourcePath = person.image;
       const uploadedImageInfo = await api.uploadImage(readFileSync(sourcePath));
       inputImage = {
         mediastore_id: uploadedImageInfo.id,
@@ -55,11 +55,13 @@ const INPUT_IMAGE_WEIGHT = ["LOW", "MEDIUM"]; // No HIGH
     console.info("Image generated: ", task?.result.final);
 
     const imageBuffer = await prepareImage(task.result.final, TEMP_IMAGE_PATH);
-    const imageDescription = `"${caption.text}" - Año ${
-      caption.year
-    }.\n\nEstilo: ${style.name}.\n${
-      person ? `Persona: ${person.name}.\nPeso: ${weight.toLowerCase()}.` : ""
-    }\n\n#marchadelsilencio2022`;
+    const imageDescription = `"${caption.text}" - Año ${caption.year}.\n${
+      person
+        ? `\nDesaparecidx: ${
+            person.name
+          }.\nPeso en la imagen: ${weight.toLowerCase()}.`
+        : ""
+    }\nEstilo: ${style.name}.\n\n#marchadelsilencio2022`;
 
     await publishToTwitter(imageBuffer, imageDescription);
     console.info("Successfully published to Twitter .");
