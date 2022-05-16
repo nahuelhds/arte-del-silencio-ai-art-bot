@@ -5,6 +5,7 @@ import {
   getRandomStyle,
   prepareImage,
   publishToInstagram,
+  publishToTwitter,
   translateEn,
 } from "./utils.js";
 import { readFileSync } from "fs";
@@ -13,7 +14,7 @@ import captions from "../data/captions.js";
 import people from "../data/people.js";
 
 const TEMP_IMAGE_PATH = "./temp/image.jpg";
-const INPUT_IMAGE_WEIGHT = ["LOW", "MEDIUM", "HIGH"];
+const INPUT_IMAGE_WEIGHT = ["LOW", "MEDIUM"]; // No HIGH
 
 (async () => {
   try {
@@ -27,7 +28,7 @@ const INPUT_IMAGE_WEIGHT = ["LOW", "MEDIUM", "HIGH"];
     let person, weight, inputImage;
     if (random()) {
       person = people[random(0, people.length - 1)];
-      weight = INPUT_IMAGE_WEIGHT[random(0, 2)];
+      weight = INPUT_IMAGE_WEIGHT[random(0, INPUT_IMAGE_WEIGHT.length - 1)];
       const sourcePath = person.coloredImage;
       const uploadedImageInfo = await api.uploadImage(readFileSync(sourcePath));
       inputImage = {
@@ -42,7 +43,9 @@ const INPUT_IMAGE_WEIGHT = ["LOW", "MEDIUM", "HIGH"];
     const task = await api.generatePicture(
       await translateEn(caption.text),
       style.id,
-      () => null,
+      (task) => {
+        console.log(task.state, "stage", task.photo_url_list.length);
+      },
       inputImage
     );
     if (!task?.result.final) {
@@ -58,11 +61,10 @@ const INPUT_IMAGE_WEIGHT = ["LOW", "MEDIUM", "HIGH"];
       person ? `Persona: ${person.name}.\nPeso: ${weight.toLowerCase()}.` : ""
     }\n\n#marchadelsilencio2022`;
 
+    await publishToTwitter(imageBuffer, imageDescription);
+    console.info("Successfully published to Twitter .");
     await publishToInstagram(imageBuffer, imageDescription);
-    console.info(
-      "Published to Instagram account successfully.",
-      imageDescription
-    );
+    console.info("Successfully published to Instagram.");
   } catch (err) {
     console.error("An error occurred in the process", err);
   }
