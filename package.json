@@ -2,15 +2,25 @@
   "name": "foo-fighters-ai-art-bot",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "type": "module",
+  "main": "src/index.js",
   "scripts": {
-    "download": "node --es-module-specifier-resolution=node src/index.js",
+    "start": "node src/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@vitalets/google-translate-api": "^8.0.0",
+    "gm": "^1.23.1",
+    "instagram-private-api": "^1.45.3",
+    "lodash.random": "^3.2.0",
     "wombo-dream-api": "^0.1.5"
+  },
+  "devDependencies": {
+    "dotenv": "^16.0.1",
+    "eslint": "^8.15.0",
+    "prettier": "^2.6.2"
   }
 }
