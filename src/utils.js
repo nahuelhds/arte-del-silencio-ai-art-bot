@@ -3,7 +3,7 @@ import gm from "gm";
 import { IgApiClient } from "instagram-private-api";
 import prompt from "prompt";
 import random from "lodash.random";
-import request from "request";
+import fetch from "node-fetch";
 import { EUploadMimeType, TwitterApi } from "twitter-api-v2";
 
 async function translateEn(text) {
@@ -17,8 +17,9 @@ async function getRandomStyle(womboInstance) {
 }
 
 async function prepareImage(imageUrl) {
+  const res = await fetch(imageUrl);
   return new Promise((resolve, reject) => {
-    gm(request(imageUrl))
+    gm(res.body)
       .resize(1080, 1350, "^")
       .gravity("Center")
       .crop(1080, 1350)

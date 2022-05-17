@@ -32,7 +32,7 @@ const INPUT_IMAGE_WEIGHT = ["LOW", "MEDIUM"]; // No HIGH
     const api = WomboDreamApi.buildDefaultInstance();
 
     let person, weight, inputImage;
-    if (random()) {
+    if (true) {
       person = people[random(0, people.length - 1)];
       weight = INPUT_IMAGE_WEIGHT[random(0, INPUT_IMAGE_WEIGHT.length - 1)];
       const sourcePath = path.join(process.cwd(), person.image);
