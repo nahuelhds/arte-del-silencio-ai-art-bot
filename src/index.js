@@ -15,11 +15,15 @@ import {
   translateEn,
   verifyCredentials,
 } from "./utils.js";
-import * as fs from "fs";
-
-const INPUT_IMAGE_WEIGHT = ["LOW", "MEDIUM"]; // No HIGH
 
 (async () => {
+  const weightsTranslations = {
+    LOW: "Bajo",
+    MEDIUM: "Medio",
+    HIGH: "Alto",
+  };
+  const weights = Object.keys(weightsTranslations);
+
   try {
     if (!(await verifyCredentials())) {
       return;
@@ -33,9 +37,9 @@ const INPUT_IMAGE_WEIGHT = ["LOW", "MEDIUM"]; // No HIGH
     const api = WomboDreamApi.buildDefaultInstance();
 
     let person, weight, inputImage;
-    if (true) {
+    if (random()) {
       person = people[random(0, people.length - 1)];
-      weight = INPUT_IMAGE_WEIGHT[random(0, INPUT_IMAGE_WEIGHT.length - 1)];
+      weight = weights[random(0, weights.length - 1)];
       const sourcePath = path.join(process.cwd(), person.image);
       const uploadedImageInfo = await api.uploadImage(readFileSync(sourcePath));
       inputImage = {
@@ -62,13 +66,13 @@ const INPUT_IMAGE_WEIGHT = ["LOW", "MEDIUM"]; // No HIGH
     console.info("Image generated: ", task?.result.final);
 
     const imageBuffer = await prepareImage(task.result.final);
-    const imageDescription = `"${caption.text}" - Año ${caption.year}.\n${
+    const imageDescription = `"${caption.text}" - Consigna del año: ${
+      caption.year
+    }.\n\n${
       person
-        ? `\nDesaparecidx: ${
-            person.name
-          }.\nPeso en la imagen: ${weight.toLowerCase()}.`
+        ? `\nDesaparecidx: ${person.name}.\nPeso de la silueta: ${weightsTranslations[weight]}.`
         : ""
-    }\nEstilo: ${style.name}.\n\n#marchadelsilencio2022`;
+    }\nEstilo artístico: ${style.name}.\n\n#marchadelsilencio2022`;
 
     const twPost = await publishToTwitter(imageBuffer, imageDescription);
     console.info(
