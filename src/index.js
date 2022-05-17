@@ -2,7 +2,6 @@
 import "dotenv/config";
 import { readFileSync } from "fs";
 import random from "lodash.random";
-import logger from "node-color-log";
 import path from "path";
 import WomboDreamApi from "wombo-dream-api";
 

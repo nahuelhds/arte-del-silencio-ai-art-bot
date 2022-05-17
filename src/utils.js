@@ -1,7 +1,6 @@
 import translate from "@vitalets/google-translate-api";
 import gm from "gm";
 import { IgApiClient } from "instagram-private-api";
-import logger from "node-color-log";
 import prompt from "prompt";
 import random from "lodash.random";
 import request from "request";
