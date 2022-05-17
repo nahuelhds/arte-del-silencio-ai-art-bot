@@ -5,8 +5,6 @@ import prompt from "prompt";
 import random from "lodash.random";
 import request from "request";
 import { EUploadMimeType, TwitterApi } from "twitter-api-v2";
-import path from "path";
-import * as fs from "fs";
 
 async function translateEn(text) {
   const res = await translate(text, { to: "en" });
@@ -19,18 +17,17 @@ async function getRandomStyle(womboInstance) {
 }
 
 async function prepareImage(imageUrl) {
-  const tempImage = path.join(process.cwd(), "./temp/image.jpg");
   return new Promise((resolve, reject) => {
     gm(request(imageUrl))
       .resize(1080, 1350, "^")
       .gravity("Center")
       .crop(1080, 1350)
-      .write(tempImage, function (err) {
+      .toBuffer("JPG", function (err, buffer) {
         if (err) {
           reject(err);
           return;
         }
-        resolve(fs.readFileSync(tempImage));
+        resolve(buffer);
       });
   });
 }
