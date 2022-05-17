@@ -8,7 +8,12 @@
     "start": "node src/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "cacheDirectories": ["data/images"],
+  "cacheDirectories": [
+    "data/images"
+  ],
+  "engines": {
+    "node": "16.x"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
