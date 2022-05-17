@@ -1,7 +1,6 @@
 /* tslint:disable:no-console */
 import "dotenv/config";
 import { readFileSync } from "fs";
-import { Iconv } from "iconv";
 import random from "lodash.random";
 import path from "path";
 import WomboDreamApi from "wombo-dream-api";
@@ -16,6 +15,7 @@ import {
   translateEn,
   verifyCredentials,
 } from "./utils.js";
+import * as fs from "fs";
 
 const INPUT_IMAGE_WEIGHT = ["LOW", "MEDIUM"]; // No HIGH
 
@@ -36,10 +36,7 @@ const INPUT_IMAGE_WEIGHT = ["LOW", "MEDIUM"]; // No HIGH
     if (true) {
       person = people[random(0, people.length - 1)];
       weight = INPUT_IMAGE_WEIGHT[random(0, INPUT_IMAGE_WEIGHT.length - 1)];
-      const sanitizedPath = new Iconv("ISO-8859-1", "UTF-8")
-        .convert(person.image)
-        .toString();
-      const sourcePath = path.join(process.cwd(), sanitizedPath);
+      const sourcePath = path.join(process.cwd(), person.image);
       const uploadedImageInfo = await api.uploadImage(readFileSync(sourcePath));
       inputImage = {
         mediastore_id: uploadedImageInfo.id,

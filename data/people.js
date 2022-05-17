@@ -1,11 +1,11 @@
 export default [
   {
     name: "Aguirre, María Rosa",
-    image: "./data/images/Aguirre-María-Rosa-A4-1-20.jpg",
+    image: "./data/images/Aguirre-Mari%CC%81a-Rosa-A4-1-20.jpg",
   },
   {
     name: "Alfaro Vázquez, Daniel Pedro",
-    image: "./data/images/Alfaro-Vázquez-Daniel-Pedro-A4-1-12.jpg",
+    image: "./data/images/Alfaro-Va%CC%81zquez-Daniel-Pedro-A4-1-12.jpg",
   },
   {
     name: "Altamirano Alza, Ricardo",
@@ -13,15 +13,15 @@ export default [
   },
   {
     name: "Altman Levy, Blanca Haydée",
-    image: "./data/images/Altman-Levy-Blanca-Haydée-A4-1-8.jpg",
+    image: "./data/images/Altman-Levy-Blanca-Hayde%CC%81e-A4-1-8.jpg",
   },
   {
     name: "Anglet de León, Beatriz Alicia",
-    image: "./data/images/Anglet-de-León-Beatriz-Alicia-A4-1-12.jpg",
+    image: "./data/images/Anglet-de-Leo%CC%81n-Beatriz-Alicia-A4-1-12.jpg",
   },
   {
     name: "Arce Viera, Gustavo Raúl",
-    image: "./data/images/Arce-Viera-Gustavo-Raúl-A4-1-12.jpg",
+    image: "./data/images/Arce-Viera-Gustavo-Rau%CC%81l-A4-1-12.jpg",
   },
   {
     name: "Arcos Latorre, Ariel",
@@ -29,11 +29,11 @@ export default [
   },
   {
     name: "Arévalo Arispe, Carlos Pablo",
-    image: "./data/images/Arévalo-Arispe-Carlos-Pablo-A4-1-8.jpg",
+    image: "./data/images/Are%CC%81valo-Arispe-Carlos-Pablo-A4-1-8.jpg",
   },
   {
     name: "Arigón Castell, Luis Eduardo",
-    image: "./data/images/Arigón-Castell-Luis-Eduardo-A4-1-20.jpg",
+    image: "./data/images/Arigo%CC%81n-Castell-Luis-Eduardo-A4-1-20.jpg",
   },
   {
     name: "Arocena da Silva Guimaraes, Marcos Basilio",
@@ -41,7 +41,7 @@ export default [
   },
   {
     name: "Arnone Hernández, Bernardo",
-    image: "./data/images/Arnone-Hernández-Bernardo-A4-1-12.jpg",
+    image: "./data/images/Arnone-Herna%CC%81ndez-Bernardo-A4-1-12.jpg",
   },
   {
     name: "Arocena Linn, Ignacio",
@@ -49,11 +49,11 @@ export default [
   },
   {
     name: "Arpino Vega, José",
-    image: "./data/images/Arpino-Vega-José-A4-1-20.jpg",
+    image: "./data/images/Arpino-Vega-Jose%CC%81-A4-1-20.jpg",
   },
   {
     name: "Artigas Nilo, María Asunción",
-    image: "./data/images/Artigas-Nilo-María-Asunción-A4-1-12.jpg",
+    image: "./data/images/Artigas-Nilo-Mari%CC%81a-Asuncio%CC%81n-A4-1-12.jpg",
   },
   {
     name: "Ayala Alvez, Abel Adan",
@@ -61,15 +61,15 @@ export default [
   },
   {
     name: "Baliñas Arias, Oscar José",
-    image: "./data/images/Baliñas-Arias-Oscar-José-A4-1-8.jpg",
+    image: "./data/images/Balin%CC%83as-Arias-Oscar-Jose%CC%81-A4-1-8.jpg",
   },
   {
     name: "Barboza Irrazábal, José Luis",
-    image: "./data/images/Barboza-Irrazábal-José-Luis-A4-1-12.jpg",
+    image: "./data/images/Barboza-Irraza%CC%81bal-Jose%CC%81-Luis-A4-1-12.jpg",
   },
   {
     name: "Barreto Capelli, Raúl",
-    image: "./data/images/Barreto-Capelli-Raúl-A4-1-12.jpg",
+    image: "./data/images/Barreto-Capelli-Rau%CC%81l-A4-1-12.jpg",
   },
   {
     name: "Barrientos Sagastibelza, Carolina",
@@ -77,28 +77,28 @@ export default [
   },
   {
     name: "Barrios Fernández, Washington Javier",
-    image: "./data/images/Barrios-Fernández-Washington-Javier-A4-1-8.jpg",
+    image: "./data/images/Barrios-Ferna%CC%81ndez-Washington-Javier-A4-1-8.jpg",
   },
   {
     name: "Basualdo Noguera, Graciela Noemí",
-    image: "./data/images/Basualdo-Noguera-Graciela-Noemí-A4-1-8.jpg",
+    image: "./data/images/Basualdo-Noguera-Graciela-Noemi%CC%81-A4-1-8.jpg",
   },
   {
     name: "Bellizzi Bellizzi, Andrés Humberto Domingo",
     image:
-      "./data/images/Bellizzi-Bellizzi-Andrés-Humberto-Domingo-A4-1-20.jpg",
+      "./data/images/Bellizzi-Bellizzi-Andre%CC%81s-Humberto-Domingo-A4-1-20.jpg",
   },
   {
     name: "Benarroyo Pencu, Mónica",
-    image: "./data/images/Benarroyo-Pencu-Mónica-A4-1-12.jpg",
+    image: "./data/images/Benarroyo-Pencu-Mo%CC%81nica-A4-1-12.jpg",
   },
   {
     name: "Benassi de Franco, María Catalina",
-    image: "./data/images/Benassi-de-Franco-María-Catalina-A4-1-36.jpg",
+    image: "./data/images/Benassi-de-Franco-Mari%CC%81a-Catalina-A4-1-36.jpg",
   },
   {
     name: "Bentancour Garín, Walner Ademir",
-    image: "./data/images/Bentancour-Garín-Walner-Ademir-A4-1-20.jpg",
+    image: "./data/images/Bentancour-Gari%CC%81n-Walner-Ademir-A4-1-20.jpg",
   },
   {
     name: "Bentancour Roth, Rutilo Dardo",
@@ -114,15 +114,15 @@ export default [
   },
   {
     name: "Bonavita Espínola, Carlos",
-    image: "./data/images/Bonavita-Espínola-Carlos-A4-1-8.jpg",
+    image: "./data/images/Bonavita-Espi%CC%81nola-Carlos-A4-1-8.jpg",
   },
   {
     name: "Borelli Cattáneo, Raúl Edgardo",
-    image: "./data/images/Borelli-Cattáneo-Raúl-Edgardo-A4-1-8.jpg",
+    image: "./data/images/Borelli-Catta%CC%81neo-Rau%CC%81l-Edgardo-A4-1-8.jpg",
   },
   {
     name: "Bosco Muñoz, Alfredo Fernando",
-    image: "./data/images/Bosco-Muñoz-Alfredo-Fernando-A4-1-12.jpg",
+    image: "./data/images/Bosco-Mun%CC%83oz-Alfredo-Fernando-A4-1-12.jpg",
   },
   {
     name: "Brieba Llandertal, Juan Manuel",
@@ -130,11 +130,11 @@ export default [
   },
   {
     name: "Burgueño Pereira, Ada Margaret",
-    image: "./data/images/Burgueño-Pereira-Ada-Margaret-A4-1-8.jpg",
+    image: "./data/images/Burguen%CC%83o-Pereira-Ada-Margaret-A4-1-8.jpg",
   },
   {
     name: "Cabezudo Pérez, Carlos Federico",
-    image: "./data/images/Cabezudo-Pérez-Carlos-Federico-A4-1-12.jpg",
+    image: "./data/images/Cabezudo-Pe%CC%81rez-Carlos-Federico-A4-1-12.jpg",
   },
   {
     name: "Cabrera Prates, Ary",
@@ -146,11 +146,11 @@ export default [
   },
   {
     name: "Caitano Malgor, José Enrique",
-    image: "./data/images/Caitano-Malgor-José-Enrique-A4-1-12.jpg",
+    image: "./data/images/Caitano-Malgor-Jose%CC%81-Enrique-A4-1-12.jpg",
   },
   {
     name: "Callaba Píriz, José Pedro",
-    image: "./data/images/Callaba-Píriz-José-Pedro-A4-1-8.jpg",
+    image: "./data/images/Callaba-Pi%CC%81riz-Jose%CC%81-Pedro-A4-1-8.jpg",
   },
   {
     name: "Camacho Osoria, Luis Alberto",
@@ -158,7 +158,7 @@ export default [
   },
   {
     name: "Camiou Minoli, María Mercedes",
-    image: "./data/images/Camiou-Minoli-María-Mercedes-A4-1-20.jpg",
+    image: "./data/images/Camiou-Minoli-Mari%CC%81a-Mercedes-A4-1-20.jpg",
   },
   {
     name: "Candia Correa, Francisco Edgardo",
@@ -170,11 +170,13 @@ export default [
   },
   {
     name: "Carneiro da Fontoura, Juvelino Andrés",
-    image: "./data/images/Carneiro-da-Fontoura-Juvelino-Andrés-A4-1-12.jpg",
+    image:
+      "./data/images/Carneiro-da-Fontoura-Juvelino-Andre%CC%81s-A4-1-12.jpg",
   },
   {
     name: "Carretero Cárdenas, María del Rosario",
-    image: "./data/images/Carretero-Cárdenas-María-del-Rosario-A4-1-20.jpg",
+    image:
+      "./data/images/Carretero-Ca%CC%81rdenas-Mari%CC%81a-del-Rosario-A4-1-20.jpg",
   },
   {
     name: "Carvalho Scanavino, Luis Alberto",
@@ -186,11 +188,11 @@ export default [
   },
   {
     name: "Casgtagnetto da Rosa, Héctor",
-    image: "./data/images/Casgtagnetto-da-Rosa-Héctor-A4-1-12.jpg",
+    image: "./data/images/Casgtagnetto-da-Rosa-He%CC%81ctor-A4-1-12.jpg",
   },
   {
     name: "Castagno Luzardo, Aníbal Ramón",
-    image: "./data/images/Castagno-Luzardo-Aníbal-Ramón-A4-1-8.jpg",
+    image: "./data/images/Castagno-Luzardo-Ani%CC%81bal-Ramo%CC%81n-A4-1-8.jpg",
   },
   {
     name: "Castillo Lima, Atalivas",
@@ -198,11 +200,11 @@ export default [
   },
   {
     name: "Castro Huerga, María Antonia",
-    image: "./data/images/Castro-Huerga-María-Antonia-A4-1-8.jpg",
+    image: "./data/images/Castro-Huerga-Mari%CC%81a-Antonia-A4-1-8.jpg",
   },
   {
     name: "Castro Pérez, Julio Gerardo",
-    image: "./data/images/Castro-Pérez-Julio-Gerardo-A4-1-12.jpg",
+    image: "./data/images/Castro-Pe%CC%81rez-Julio-Gerardo-A4-1-12.jpg",
   },
   {
     name: "Castro Pintos, Roberto Waldemar",
@@ -210,31 +212,31 @@ export default [
   },
   {
     name: "Cendán Almada, Juan Angel",
-    image: "./data/images/Cendán-Almada-Juan-Angel-A4-1-12.jpg",
+    image: "./data/images/Cenda%CC%81n-Almada-Juan-Angel-A4-1-12.jpg",
   },
   {
     name: "Cháves Sosa, Ubagésner",
-    image: "./data/images/Cháves-Sosa-Ubagésner-A4-1-12.jpg",
+    image: "./data/images/Cha%CC%81ves-Sosa-Ubage%CC%81sner-A4-1-12.jpg",
   },
   {
     name: "Chegenián Rodríguez, Segundo",
-    image: "./data/images/Chegenián-Rodríguez-Segundo-A4-1-8.jpg",
+    image: "./data/images/Chegenia%CC%81n-Rodri%CC%81guez-Segundo-A4-1-8.jpg",
   },
   {
     name: "Chizzola Cano, Eduardo Efraín",
-    image: "./data/images/Chizzola-Cano-Eduardo-Efraín-A4-1-12.jpg",
+    image: "./data/images/Chizzola-Cano-Eduardo-Efrai%CC%81n-A4-1-12.jpg",
   },
   {
     name: "Corchs Laviña, Alberto",
-    image: "./data/images/Corchs-Laviña-Alberto-A4-1-8.jpg",
+    image: "./data/images/Corchs-Lavin%CC%83a-Alberto-A4-1-8.jpg",
   },
   {
     name: "Correa Rodríguez, Julio Gerardo",
-    image: "./data/images/Correa-Rodríguez-Julio-Gerardo-A4-1-12.jpg",
+    image: "./data/images/Correa-Rodri%CC%81guez-Julio-Gerardo-A4-1-12.jpg",
   },
   {
     name: "Cram Rodríguez, Washington",
-    image: "./data/images/Cram-Rodríguez-Washington-A4-1-8.jpg",
+    image: "./data/images/Cram-Rodri%CC%81guez-Washington-A4-1-8.jpg",
   },
   {
     name: "Cruz Bonfiglio, Mario Jorge",
@@ -246,7 +248,8 @@ export default [
   },
   {
     name: "D´Elía Pallares, Julio César",
-    image: "./data/images/D´Elía-Pallares-Julio-César-A4-1-8.jpg",
+    image:
+      "./data/images/D%C2%B4Eli%CC%81a-Pallares-Julio-Ce%CC%81sar-A4-1-8.jpg",
   },
   {
     name: "Da Silveira Chiappino, Graciela Teresa",
@@ -262,16 +265,16 @@ export default [
   },
   {
     name: "De León Scanziani, Juan Alberto",
-    image: "./data/images/De-León-Scanziani-Juan-Alberto-A4-1-36.jpg",
+    image: "./data/images/De-Leo%CC%81n-Scanziani-Juan-Alberto-A4-1-36.jpg",
   },
   {
     name: "Del Fabro de Bernardis, Eduardo José María",
     image:
-      "./data/images/Del-Fabro-de-Bernardis-Eduardo-José-María-A4-1-12.jpg",
+      "./data/images/Del-Fabro-de-Bernardis-Eduardo-Jose%CC%81-Mari%CC%81a-A4-1-12.jpg",
   },
   {
     name: "Delpino Baubeta, Júpiter Neo",
-    image: "./data/images/Delpino-Baubeta-Júpiter-Neo-A4-1-20.jpg",
+    image: "./data/images/Delpino-Baubeta-Ju%CC%81piter-Neo-A4-1-20.jpg",
   },
   {
     name: "Dergan Jorge, Natalio Abdala",
@@ -279,7 +282,8 @@ export default [
   },
   {
     name: "Díaz de Cárdenas, Fernando Rafael Santiago",
-    image: "./data/images/Díaz-de-Cárdenas-Fernando-Rafael-Santiago-A4-1-8.jpg",
+    image:
+      "./data/images/Di%CC%81az-de-Ca%CC%81rdenas-Fernando-Rafael-Santiago-A4-1-8.jpg",
   },
   {
     name: "Dossetti Techeira, Edmundo Sabino",
@@ -287,7 +291,7 @@ export default [
   },
   {
     name: "Duarte Luján, León Gualberto",
-    image: "./data/images/Duarte-Luján-León-Gualberto-A4-1-12.jpg",
+    image: "./data/images/Duarte-Luja%CC%81n-Leo%CC%81n-Gualberto-A4-1-12.jpg",
   },
   {
     name: "Epelbaum Slotopolsky, Claudio",
@@ -307,15 +311,17 @@ export default [
   },
   {
     name: "Fernández Amarillo, Juan Guillermo",
-    image: "./data/images/Fernández-Amarillo-Juan-Guillermo-A4-1-8.jpg",
+    image: "./data/images/Ferna%CC%81ndez-Amarillo-Juan-Guillermo-A4-1-8.jpg",
   },
   {
     name: "Fernández Fernández, Julio César",
-    image: "./data/images/Fernández-Fernández-Julio-César-A4-1-12.jpg",
+    image:
+      "./data/images/Ferna%CC%81ndez-Ferna%CC%81ndez-Julio-Ce%CC%81sar-A4-1-12.jpg",
   },
   {
     name: "Fernández Lanzani, Elsa Haydée",
-    image: "./data/images/Fernández-Lanzani-Elsa-Haydée-A4-1-12.jpg",
+    image:
+      "./data/images/Ferna%CC%81ndez-Lanzani-Elsa-Hayde%CC%81e-A4-1-12.jpg",
   },
   {
     name: "Filipazzi Rossini, Rafaela Giuliana",
@@ -327,7 +333,7 @@ export default [
   },
   {
     name: "Gadea Galán, Nelsa Zulema",
-    image: "./data/images/Gadea-Galán-Nelsa-Zulema-A4-1-8.jpg",
+    image: "./data/images/Gadea-Gala%CC%81n-Nelsa-Zulema-A4-1-8.jpg",
   },
   {
     name: "Gallo Castro, Eduardo",
@@ -335,35 +341,39 @@ export default [
   },
   {
     name: "Gámbaro Nuñez, Raúl",
-    image: "./data/images/Gámbaro-Nuñez-Raúl-A4-1-8.jpg",
+    image: "./data/images/Ga%CC%81mbaro-Nun%CC%83ez-Rau%CC%81l-A4-1-8.jpg",
   },
   {
     name: "Gándara Castromán, Elba Lucía",
-    image: "./data/images/Gándara-Castromán-Elba-Lucía-A4-1-12.jpg",
+    image:
+      "./data/images/Ga%CC%81ndara-Castroma%CC%81n-Elba-Luci%CC%81a-A4-1-12.jpg",
   },
   {
     name: "García Calcagno, Germán Nelson",
-    image: "./data/images/García-Calcagno-Germán-Nelson-A4-1-20.jpg",
+    image:
+      "./data/images/Garci%CC%81a-Calcagno-Germa%CC%81n-Nelson-A4-1-20.jpg",
   },
   {
     name: "García Iruretagoyena, María Claudia",
-    image: "./data/images/García-Iruretagoyena-María-Claudia-A4-1-12.jpg",
+    image:
+      "./data/images/Garci%CC%81a-Iruretagoyena-Mari%CC%81a-Claudia-A4-1-12.jpg",
   },
   {
     name: "García Kieffer, Manuel Eduardo",
-    image: "./data/images/García-Kieffer-Manuel-Eduardo-A4-1-36.jpg",
+    image: "./data/images/Garci%CC%81a-Kieffer-Manuel-Eduardo-A4-1-36.jpg",
   },
   {
     name: "García Ramos, Ileana Sara María",
-    image: "./data/images/García-Ramos-Ileana-Sara-María-A4-1-12.jpg",
+    image:
+      "./data/images/Garci%CC%81a-Ramos-Ileana-Sara-Mari%CC%81a-A4-1-12.jpg",
   },
   {
     name: "Garreiro Martínez, María Elsa",
-    image: "./data/images/Garreiro-Martínez-María-Elsa-A4-1-20.jpg",
+    image: "./data/images/Garreiro-Marti%CC%81nez-Mari%CC%81a-Elsa-A4-1-20.jpg",
   },
   {
     name: "Gatti Antuña, Gerardo Francisco",
-    image: "./data/images/Gatti-Antuña-Gerardo-Francisco-A4-1-8.jpg",
+    image: "./data/images/Gatti-Antun%CC%83a-Gerardo-Francisco-A4-1-8.jpg",
   },
   {
     name: "Gatti Casals, Adriana",
@@ -371,11 +381,12 @@ export default [
   },
   {
     name: "Gelós Bonilla, Horacio",
-    image: "./data/images/Gelós-Bonilla-Horacio-A4-1-12.jpg",
+    image: "./data/images/Gelo%CC%81s-Bonilla-Horacio-A4-1-12.jpg",
   },
   {
     name: "Gelpi Cáceres, Leonardo Germán",
-    image: "./data/images/Gelpi-Cáceres-Leonardo-Germán-A4-1-12.jpg",
+    image:
+      "./data/images/Gelpi-Ca%CC%81ceres-Leonardo-Germa%CC%81n-A4-1-12.jpg",
   },
   {
     name: "Gersberg Dreifus, Esther",
@@ -383,7 +394,7 @@ export default [
   },
   {
     name: "Giordano Cortazzo, Héctor Orlando",
-    image: "./data/images/Giordano-Cortazzo-Héctor-Orlando-A4-1-12.jpg",
+    image: "./data/images/Giordano-Cortazzo-He%CC%81ctor-Orlando-A4-1-12.jpg",
   },
   {
     name: "Gomensoro Josman, Hugo Ernesto",
@@ -395,7 +406,7 @@ export default [
   },
   {
     name: "Gómez Rosano, Célica Elida",
-    image: "./data/images/Gómez-Rosano-Célica-Elida-A4-1-8.jpg",
+    image: "./data/images/Go%CC%81mez-Rosano-Ce%CC%81lica-Elida-A4-1-8.jpg",
   },
   {
     name: "Goncalvez Busconi, Jorge Felisberto",
@@ -403,28 +414,33 @@ export default [
   },
   {
     name: "González Fernández, Nelson Wilfredo",
-    image: "./data/images/González-Fernández-Nelson-Wilfredo-A4-1-8.jpg",
+    image:
+      "./data/images/Gonza%CC%81lez-Ferna%CC%81ndez-Nelson-Wilfredo-A4-1-8.jpg",
   },
   {
     name: "González González, Luis Eduardo",
-    image: "./data/images/González-González-Luis-Eduardo-A4-1-12.jpg",
+    image:
+      "./data/images/Gonza%CC%81lez-Gonza%CC%81lez-Luis-Eduardo-A4-1-12.jpg",
   },
   {
     name: "Goñi Martínez, Darío Gilberto",
-    image: "./data/images/Goñi-Martínez-Darío-Gilberto-A4-1-8.jpg",
+    image:
+      "./data/images/Gon%CC%83i-Marti%CC%81nez-Dari%CC%81o-Gilberto-A4-1-8.jpg",
   },
   {
     name: "Goycoechea Camacho, Gustavo Alejandro María",
     image:
-      "./data/images/Goycoechea-Camacho-Gustavo-Alejandro-María-A4-1-12.jpg",
+      "./data/images/Goycoechea-Camacho-Gustavo-Alejandro-Mari%CC%81a-A4-1-12.jpg",
   },
   {
     name: "Grisonas Andrijauskaite, Victoria Lucía",
-    image: "./data/images/Grisonas-Andrijauskaite-Victoria-Lucía-A4-1-12.jpg",
+    image:
+      "./data/images/Grisonas-Andrijauskaite-Victoria-Luci%CC%81a-A4-1-12.jpg",
   },
   {
     name: "Grinspón Pavón, Mónica Sofía",
-    image: "./data/images/Grinspón-Pavón-Mónica-Sofía-A4-1-20.jpg",
+    image:
+      "./data/images/Grinspo%CC%81n-Pavo%CC%81n-Mo%CC%81nica-Sofi%CC%81a-A4-1-20.jpg",
   },
   {
     name: "Guaz Porley, Carlos Gabriel",
@@ -432,19 +448,21 @@ export default [
   },
   {
     name: "Hernández Hobbas, Beatriz Lourdes",
-    image: "./data/images/Hernández-Hobbas-Beatriz-Lourdes-A4-1-20.jpg",
+    image: "./data/images/Herna%CC%81ndez-Hobbas-Beatriz-Lourdes-A4-1-20.jpg",
   },
   {
     name: "Hernández Hobbas, Washington Fernando",
-    image: "./data/images/Hernández-Hobbas-Washington-Fernando-A4-1-20.jpg",
+    image:
+      "./data/images/Herna%CC%81ndez-Hobbas-Washington-Fernando-A4-1-20.jpg",
   },
   {
     name: "Hernández Machado, Carlos Julián",
-    image: "./data/images/Hernández-Machado-Carlos-Julián-A4-1-12.jpg",
+    image:
+      "./data/images/Herna%CC%81ndez-Machado-Carlos-Julia%CC%81n-A4-1-12.jpg",
   },
   {
     name: "Hernández Rodríguez, Jorge",
-    image: "./data/images/Hernández-Rodríguez-Jorge-A4-1-8.jpg",
+    image: "./data/images/Herna%CC%81ndez-Rodri%CC%81guez-Jorge-A4-1-8.jpg",
   },
   {
     name: "Hobbas Belusci, Lourdes",
@@ -452,7 +470,8 @@ export default [
   },
   {
     name: "Ibarbia Corassi, María Angélica",
-    image: "./data/images/Ibarbia-Corassi-María-Angélica-A4-1-20.jpg",
+    image:
+      "./data/images/Ibarbia-Corassi-Mari%CC%81a-Ange%CC%81lica-A4-1-20.jpg",
   },
   {
     name: "Insausti Tironi, Juan Carlos",
@@ -464,15 +483,15 @@ export default [
   },
   {
     name: "Islas Gatti, María Emilia",
-    image: "./data/images/Islas-Gatti-María-Emilia-A4-1-12.jpg",
+    image: "./data/images/Islas-Gatti-Mari%CC%81a-Emilia-A4-1-12.jpg",
   },
   {
     name: "Julien Cáceres, Mario Roger",
-    image: "./data/images/Julien-Cáceres-Mario-Roger-A4-1-20.jpg",
+    image: "./data/images/Julien-Ca%CC%81ceres-Mario-Roger-A4-1-20.jpg",
   },
   {
     name: "Keim Lledó, Josefina Modesta",
-    image: "./data/images/Keim-Lledó-Josefina-Modesta-A4-1-36.jpg",
+    image: "./data/images/Keim-Lledo%CC%81-Josefina-Modesta-A4-1-36.jpg",
   },
   {
     name: "Lema Aguiar, Miguel Angel",
@@ -484,7 +503,7 @@ export default [
   },
   {
     name: "Lezama González, Rafael Laudelino",
-    image: "./data/images/Lezama-González-Rafael-Laudelino-A4-1-20.jpg",
+    image: "./data/images/Lezama-Gonza%CC%81lez-Rafael-Laudelino-A4-1-20.jpg",
   },
   {
     name: "Liberoff Peisajovich, Manuel",
@@ -496,11 +515,12 @@ export default [
   },
   {
     name: "López López, Arazatí Ramón",
-    image: "./data/images/López-López-Arazatí-Ramón-A4-1-8.jpg",
+    image:
+      "./data/images/Lo%CC%81pez-Lo%CC%81pez-Arazati%CC%81-Ramo%CC%81n-A4-1-8.jpg",
   },
   {
     name: "Lucas López, Enrique Joaquín",
-    image: "./data/images/Lucas-López-Enrique-Joaquín-A4-1-12.jpg",
+    image: "./data/images/Lucas-Lo%CC%81pez-Enrique-Joaqui%CC%81n-A4-1-12.jpg",
   },
   {
     name: "Luppi Mazzone, Mary Norma",
@@ -512,31 +532,33 @@ export default [
   },
   {
     name: "Maidana Bentín, Félix",
-    image: "./data/images/Maidana-Bentín-Félix-A4-1-8.jpg",
+    image: "./data/images/Maidana-Benti%CC%81n-Fe%CC%81lix-A4-1-8.jpg",
   },
   {
     name: "Martínez Horminoguez, Jorge Hugo",
-    image: "./data/images/Martínez-Horminoguez-Jorge-Hugo-A4-1-12.jpg",
+    image: "./data/images/Marti%CC%81nez-Horminoguez-Jorge-Hugo-A4-1-12.jpg",
   },
   {
     name: "Fernández Santoro, Luis Fernando",
-    image: "./data/images/Fernández-Santoro-Luis-Fernando-A4-1-12.jpg",
+    image: "./data/images/Ferna%CC%81ndez-Santoro-Luis-Fernando-A4-1-12.jpg",
   },
   {
     name: "Martínez Suárez, José Mario",
-    image: "./data/images/Martínez-Suárez-José-Mario-A4-1-8.jpg",
+    image:
+      "./data/images/Marti%CC%81nez-Sua%CC%81rez-Jose%CC%81-Mario-A4-1-8.jpg",
   },
   {
     name: "Mato Fagián, Miguel Angel",
-    image: "./data/images/Mato-Fagián-Miguel-Angel-A4-1-12.jpg",
+    image: "./data/images/Mato-Fagia%CC%81n-Miguel-Angel-A4-1-12.jpg",
   },
   {
     name: "Mazzuchi Frantchéz, Winston César",
-    image: "./data/images/Mazzuchi-Frantchéz-Winston-César-A4-1-20.jpg",
+    image:
+      "./data/images/Mazzuchi-Frantche%CC%81z-Winston-Ce%CC%81sar-A4-1-20.jpg",
   },
   {
     name: "Mechoso Méndez, Alberto Cecilio",
-    image: "./data/images/Mechoso-Méndez-Alberto-Cecilio-A4-1-12.jpg",
+    image: "./data/images/Mechoso-Me%CC%81ndez-Alberto-Cecilio-A4-1-12.jpg",
   },
   {
     name: "Melo Cuesta, Nebio Ariel",
@@ -544,7 +566,7 @@ export default [
   },
   {
     name: "Méndez Donadio, José Hugo",
-    image: "./data/images/Méndez-Donadio-José-Hugo-A4-1-12.jpg",
+    image: "./data/images/Me%CC%81ndez-Donadio-Jose%CC%81-Hugo-A4-1-12.jpg",
   },
   {
     name: "Micheff Jara, Juan Micho",
@@ -552,7 +574,7 @@ export default [
   },
   {
     name: "Michelena Bastarrica, José Enrique",
-    image: "./data/images/Michelena-Bastarrica-José-Enrique-A4-1-8.jpg",
+    image: "./data/images/Michelena-Bastarrica-Jose%CC%81-Enrique-A4-1-8.jpg",
   },
   {
     name: "Miranda Feleintor, Urano",
@@ -560,7 +582,7 @@ export default [
   },
   {
     name: "Miranda Pérez, Fernando",
-    image: "./data/images/Miranda-Pérez-Fernando-A4-1-12.jpg",
+    image: "./data/images/Miranda-Pe%CC%81rez-Fernando-A4-1-12.jpg",
   },
   {
     name: "Modernell, Carlos Alberto",
@@ -568,7 +590,8 @@ export default [
   },
   {
     name: "Montes de Oca Domenech, Otermín Laureano",
-    image: "./data/images/Montes-de-Oca-Domenech-Otermín-Laureano-A4-1-8.jpg",
+    image:
+      "./data/images/Montes-de-Oca-Domenech-Otermi%CC%81n-Laureano-A4-1-8.jpg",
   },
   {
     name: "Morales von Pieverling, Juan Miguel",
@@ -584,15 +607,16 @@ export default [
   },
   {
     name: "O´Neil Velázquez, Heber Eduardo",
-    image: "./data/images/O´Neil-Velázquez-Heber-Eduardo-A4-1-12.jpg",
+    image:
+      "./data/images/O%C2%B4Neil-Vela%CC%81zquez-Heber-Eduardo-A4-1-12.jpg",
   },
   {
     name: "Olivera Cancela, Raúl Pedro",
-    image: "./data/images/Olivera-Cancela-Raúl-Pedro-A4-1-8.jpg",
+    image: "./data/images/Olivera-Cancela-Rau%CC%81l-Pedro-A4-1-8.jpg",
   },
   {
     name: "Ortiz Piasoli, Félix Sebastián",
-    image: "./data/images/Ortiz-Piasoli-Félix-Sebastián-A4-1-8.jpg",
+    image: "./data/images/Ortiz-Piasoli-Fe%CC%81lix-Sebastia%CC%81n-A4-1-8.jpg",
   },
   {
     name: "Osorio Yamuni, Pablo Horacio",
@@ -608,7 +632,7 @@ export default [
   },
   {
     name: "Paciello Martínez, Asdrúbal",
-    image: "./data/images/Paciello-Martínez-Asdrúbal-A4-1-8.jpg",
+    image: "./data/images/Paciello-Marti%CC%81nez-Asdru%CC%81bal-A4-1-8.jpg",
   },
   {
     name: "Pedreira Brum, Jorge",
@@ -616,23 +640,25 @@ export default [
   },
   {
     name: "Pelúa Pereira, José Luis",
-    image: "./data/images/Pelúa-Pereira-José-Luis-A4-1-12.jpg",
+    image: "./data/images/Pelu%CC%81a-Pereira-Jose%CC%81-Luis-A4-1-12.jpg",
   },
   {
     name: "Pelúa Pereira, Martín Isabelino",
-    image: "./data/images/Pelúa-Pereira-Martín-Isabelino-A4-1-12.jpg",
+    image:
+      "./data/images/Pelu%CC%81a-Pereira-Marti%CC%81n-Isabelino-A4-1-12.jpg",
   },
   {
     name: "Pereira Gasagoite, Renée",
-    image: "./data/images/Pereira-Gasagoite-Renée-A4-1-20.jpg",
+    image: "./data/images/Pereira-Gasagoite-Rene%CC%81e-A4-1-20.jpg",
   },
   {
     name: "Pérez Silveira, Eduardo",
-    image: "./data/images/Pérez-Silveira-Eduardo-A4-1-8.jpg",
+    image: "./data/images/Pe%CC%81rez-Silveira-Eduardo-A4-1-8.jpg",
   },
   {
     name: "Potenza Ferreira, José Agustín",
-    image: "./data/images/Potenza-Ferreira-José-Agustín-A4-1-12.jpg",
+    image:
+      "./data/images/Potenza-Ferreira-Jose%CC%81-Agusti%CC%81n-A4-1-12.jpg",
   },
   {
     name: "Povaschuk Galeazzo, Juan Antonio",
@@ -640,23 +666,23 @@ export default [
   },
   {
     name: "Prieto González, Ruben",
-    image: "./data/images/Prieto-González-Ruben-A4-1-8.jpg",
+    image: "./data/images/Prieto-Gonza%CC%81lez-Ruben-A4-1-8.jpg",
   },
   {
     name: "Queiró Uzal, Washington Domingo",
-    image: "./data/images/Queiró-Uzal-Washington-Domingo-A4-1-8.jpg",
+    image: "./data/images/Queiro%CC%81-Uzal-Washington-Domingo-A4-1-8.jpg",
   },
   {
     name: "Quinteros Almeida, Elena Cándida",
-    image: "./data/images/Quinteros-Almeida-Elena-Cándida-A4-1-20.jpg",
+    image: "./data/images/Quinteros-Almeida-Elena-Ca%CC%81ndida-A4-1-20.jpg",
   },
   {
     name: "Quiñones, Modesto",
-    image: "./data/images/Quiñones-Modesto-A4-1-8.jpg",
+    image: "./data/images/Quin%CC%83ones-Modesto-A4-1-8.jpg",
   },
   {
     name: "Raina González, Carlos Alberto",
-    image: "./data/images/Raina-González-Carlos-Alberto-A4-1-8.jpg",
+    image: "./data/images/Raina-Gonza%CC%81lez-Carlos-Alberto-A4-1-8.jpg",
   },
   {
     name: "Rando Ferreira, Francisco",
@@ -668,27 +694,30 @@ export default [
   },
   {
     name: "Río Casas, Miguel Angel",
-    image: "./data/images/Río-Casas-Miguel-Angel-A4-1-20.jpg",
+    image: "./data/images/Ri%CC%81o-Casas-Miguel-Angel-A4-1-20.jpg",
   },
   {
     name: "Rodríguez de Bessio, Blanca Margarita",
-    image: "./data/images/Rodríguez-de-Bessio-Blanca-Margarita-A4-1-20.jpg",
+    image:
+      "./data/images/Rodri%CC%81guez-de-Bessio-Blanca-Margarita-A4-1-20.jpg",
   },
   {
     name: "Rodríguez Liberto, Félix Antonio",
-    image: "./data/images/Rodríguez-Liberto-Félix-Antonio-A4-1-20.jpg",
+    image:
+      "./data/images/Rodri%CC%81guez-Liberto-Fe%CC%81lix-Antonio-A4-1-20.jpg",
   },
   {
     name: "Rodríguez Mercader, Carlos Alfredo",
-    image: "./data/images/Rodríguez-Mercader-Carlos-Alfredo-A4-1-12.jpg",
+    image: "./data/images/Rodri%CC%81guez-Mercader-Carlos-Alfredo-A4-1-12.jpg",
   },
   {
     name: "Rodríguez Sanabria, Ever",
-    image: "./data/images/Rodríguez-Sanabria-Ever-A4-1-20.jpg",
+    image: "./data/images/Rodri%CC%81guez-Sanabria-Ever-A4-1-20.jpg",
   },
   {
     name: "Rodríguez Rodríguez, Julio Oscar César",
-    image: "./data/images/Rodríguez-Rodríguez-Julio-Oscar-César-A4-1-8.jpg",
+    image:
+      "./data/images/Rodri%CC%81guez-Rodri%CC%81guez-Julio-Oscar-Ce%CC%81sar-A4-1-8.jpg",
   },
   {
     name: "Sanjurjo Casal, Amelia",
@@ -700,23 +729,23 @@ export default [
   },
   {
     name: "Sanz Fernández, Aída Celia",
-    image: "./data/images/Sanz-Fernández-Aída-Celia-A4-1-12.jpg",
+    image: "./data/images/Sanz-Ferna%CC%81ndez-Ai%CC%81da-Celia-A4-1-12.jpg",
   },
   {
     name: "Scópise Rijo, Norma Mary",
-    image: "./data/images/Scópise-Rijo-Norma-Mary-A4-1-20.jpg",
+    image: "./data/images/Sco%CC%81pise-Rijo-Norma-Mary-A4-1-20.jpg",
   },
   {
     name: "Sena Rodríguez, Olivar Lauro",
-    image: "./data/images/Sena-Rodríguez-Olivar-Lauro-A4-1-12.jpg",
+    image: "./data/images/Sena-Rodri%CC%81guez-Olivar-Lauro-A4-1-12.jpg",
   },
   {
     name: "Serra Silvera, Helios Hermógenes",
-    image: "./data/images/Serra-Silvera-Helios-Hermógenes-A4-1-8.jpg",
+    image: "./data/images/Serra-Silvera-Helios-Hermo%CC%81genes-A4-1-8.jpg",
   },
   {
     name: "Severo Barreto, Ary Héctor",
-    image: "./data/images/Severo-Barreto-Ary-Héctor-A4-1-8.jpg",
+    image: "./data/images/Severo-Barreto-Ary-He%CC%81ctor-A4-1-8.jpg",
   },
   {
     name: "Severo Barreto, Carlos Baldomiro",
@@ -728,15 +757,15 @@ export default [
   },
   {
     name: "Silva Iribarnegaray, Kléber",
-    image: "./data/images/Silva-Iribarnegaray-Kléber-A4-1-20.jpg",
+    image: "./data/images/Silva-Iribarnegaray-Kle%CC%81ber-A4-1-20.jpg",
   },
   {
     name: "Silveira Gramont, María Rosa",
-    image: "./data/images/Silveira-Gramont-María-Rosa-A4-1-8.jpg",
+    image: "./data/images/Silveira-Gramont-Mari%CC%81a-Rosa-A4-1-8.jpg",
   },
   {
     name: "Soba Fernández, Adalberto Waldemar",
-    image: "./data/images/Soba-Fernández-Adalberto-Waldemar-A4-1-12.jpg",
+    image: "./data/images/Soba-Ferna%CC%81ndez-Adalberto-Waldemar-A4-1-12.jpg",
   },
   {
     name: "Sobrino Berardi, Guillermo Manuel",
@@ -744,11 +773,11 @@ export default [
   },
   {
     name: "Soca, Juan Américo",
-    image: "./data/images/Soca-Juan-Américo-A4-1-12.jpg",
+    image: "./data/images/Soca-Juan-Ame%CC%81rico-A4-1-12.jpg",
   },
   {
     name: "Sosa Valdéz, Luján Alcides",
-    image: "./data/images/Sosa-Valdéz-Luján-Alcides-A4-1-12.jpg",
+    image: "./data/images/Sosa-Valde%CC%81z-Luja%CC%81n-Alcides-A4-1-12.jpg",
   },
   {
     name: "Stroman Curbelo, Adolfo Isabelino",
@@ -756,27 +785,29 @@ export default [
   },
   {
     name: "Tassino Asteazú, Oscar",
-    image: "./data/images/Tassino-Asteazú-Oscar-A4-1-12.jpg",
+    image: "./data/images/Tassino-Asteazu%CC%81-Oscar-A4-1-12.jpg",
   },
   {
     name: "Tejera Llovet, Raúl Néstor",
-    image: "./data/images/Tejera-Llovet-Raúl-Néstor-A4-1-20.jpg",
+    image: "./data/images/Tejera-Llovet-Rau%CC%81l-Ne%CC%81stor-A4-1-20.jpg",
   },
   {
     name: "Trías Hernández, Cecilia Susana",
-    image: "./data/images/Trías-Hernández-Cecilia-Susana-A4-1-12.jpg",
+    image:
+      "./data/images/Tri%CC%81as-Herna%CC%81ndez-Cecilia-Susana-A4-1-12.jpg",
   },
   {
     name: "Trinidad Espinosa, Líver Eduardo",
-    image: "./data/images/Trinidad-Espinosa-Líver-Eduardo-A4-1-12.jpg",
+    image: "./data/images/Trinidad-Espinosa-Li%CC%81ver-Eduardo-A4-1-12.jpg",
   },
   {
     name: "Urtasun Terra, José Luis",
-    image: "./data/images/Urtasun-Terra-José-Luis-A4-1-8.jpg",
+    image: "./data/images/Urtasun-Terra-Jose%CC%81-Luis-A4-1-8.jpg",
   },
   {
     name: "Villaflor Gómez, Raimundo Aníbal",
-    image: "./data/images/Villaflor-Gómez-Raimundo-Aníbal-A4-1-20.jpg",
+    image:
+      "./data/images/Villaflor-Go%CC%81mez-Raimundo-Ani%CC%81bal-A4-1-20.jpg",
   },
   {
     name: "Wurm Mallines, Wilhelm",
@@ -788,6 +819,6 @@ export default [
   },
   {
     name: "Zuazu Maio, María Nieves",
-    image: "./data/images/Zuazu-Maio-María-Nieves-A4-1-12.jpg",
+    image: "./data/images/Zuazu-Maio-Mari%CC%81a-Nieves-A4-1-12.jpg",
   },
 ];
