@@ -70,10 +70,16 @@ const INPUT_IMAGE_WEIGHT = ["LOW", "MEDIUM"]; // No HIGH
         : ""
     }\nEstilo: ${style.name}.\n\n#marchadelsilencio2022`;
 
-    await publishToTwitter(imageBuffer, imageDescription);
-    logger.info("Successfully published to Twitter .");
-    await publishToInstagram(imageBuffer, imageDescription);
-    logger.info("Successfully published to Instagram.");
+    const twPost = await publishToTwitter(imageBuffer, imageDescription);
+    logger.info(
+      "Successfully published to Twitter:",
+      `https://twitter.com/${twPost.user.screen_name}/status/${twPost.id_str}`
+    );
+    const igPost = await publishToInstagram(imageBuffer, imageDescription);
+    logger.info(
+      "Successfully published to Instagram:",
+      `https://instagram.com/p/${igPost.media.code}/`
+    );
   } catch (err) {
     logger.error("An error occurred in the process", err);
   }

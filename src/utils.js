@@ -45,7 +45,7 @@ async function publishToTwitter(imageBuffer, caption) {
     mimeType: EUploadMimeType.Jpeg,
   });
 
-  await client.v1.tweet(caption, { media_ids: mediaId });
+  return client.v1.tweet(caption, { media_ids: mediaId });
 }
 
 async function verifyCredentials() {
@@ -158,7 +158,7 @@ async function publishToInstagram(imageBuffer, caption) {
   igClient.state.generateDevice(username);
   // ig.state.proxyUrl = process.env.IG_PROXY;
   await igClient.account.login(username, password);
-  await igClient.publish.photo({
+  return igClient.publish.photo({
     file: imageBuffer,
     caption: caption,
   });
