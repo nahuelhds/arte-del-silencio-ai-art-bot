@@ -1,9 +1,11 @@
+import translate from "@vitalets/google-translate-api";
 import gm from "gm";
+import { IgApiClient } from "instagram-private-api";
+import logger from "node-color-log";
+import prompt from "prompt";
 import random from "lodash.random";
 import request from "request";
-import { IgApiClient } from "instagram-private-api";
 import { EUploadMimeType, TwitterApi } from "twitter-api-v2";
-import translate from "@vitalets/google-translate-api";
 
 async function translateEn(text) {
   const res = await translate(text, { to: "en" });
@@ -32,54 +34,131 @@ async function prepareImage(imageUrl) {
 }
 
 async function publishToTwitter(imageBuffer, caption) {
-  // if (process.env.TW_USER_PIN) {
-  // console.warn(
-  //   "No access token detected for publishin on Twitter. Requesting authorization"
-  // );
-  // console.info(
-  //   "Log in to https://twitter.com as the user you want to tweet as and hit enter."
-  // );
-  // First step
-  // const client = new TwitterApi({
-  //   appKey: process.env.TW_API_KEY,
-  //   appSecret: process.env.TW_API_KEY_SECRET,
-  // });
-  //
-  // const auth_url = await client.generateAuthLink();
-  // console.info("Visit %s in your browser and hit enter.", auth_url.url);
-
   const client = new TwitterApi({
     appKey: process.env.TW_API_KEY,
-    appSecret: process.env.TW_API_KEY_SECRET,
+    appSecret: process.env.TW_API_SECRET,
     accessToken: process.env.TW_ACCESS_TOKEN,
-    accessSecret: process.env.TW_ACCESS_TOKEN_SECRET,
-    // accessToken: auth_url.oauth_token:, // oauth token from previous step (link generation)
-    // accessSecret: auth_url.oauth_token_secret, // oauth token secret from previous step (link generation)
+    accessSecret: process.env.TW_ACCESS_SECRET,
   });
 
   const mediaId = await client.v1.uploadMedia(imageBuffer, {
     mimeType: EUploadMimeType.Jpeg,
   });
-  const newTweet = await client.v1.tweet(caption, { media_ids: mediaId });
-  // }
 
-  // const client = new TwitterApi({
-  //   clientId: process.env.TW_CLIENT_ID,
-  //   clientSecret: process.env.TW_CLIENT_SECRET,
-  // });
-  // OAuth2 (app-only or user context)
-  // Create a client with an already known bearer token
-  // const consumerClient = new TwitterApi(process.env.TW_BEARER_TOKEN);
-  // Obtain app-only client
-  // const client = await consumerClient.appLogin();
+  await client.v1.tweet(caption, { media_ids: mediaId });
+}
+
+async function verifyCredentials() {
+  if (!(await verifyInstagramCredentials())) {
+    return false;
+  }
+
+  if (!(await verifyTwitterCredentials())) {
+    return false;
+  }
+
+  return true;
+}
+
+async function verifyInstagramCredentials() {
+  const { IG_USERNAME: username, IG_PASSWORD: password } = process.env;
+  if (!username || !password) {
+    logger.error(
+      `Your Instagram username and password from your profile are not defined in the config file.
+      Add that info in the IG_USERNAME and IG_PASSWORD properties into your .env file and start over.`
+    );
+    return false;
+  }
+  return true;
+}
+
+async function verifyTwitterCredentials() {
+  const { TW_API_KEY: apiKey, TW_API_SECRET: apiSecret } = process.env;
+
+  if (!apiKey || !apiSecret) {
+    logger.error(
+      `Your Twitter API Key and Secret are not defined in the config file.
+      - Go to https://developer.twitter.com/en/portal/projects-and-apps
+      - Select your project and then go to "Keys and tokens" section
+      - Generate your Consumer keys.
+      - Add that info in the TW_API_KEY and TW_API_SECRET properties into your .env file and start over.`
+    );
+    return false;
+  }
+
+  const { TW_ACCESS_TOKEN, TW_ACCESS_SECRET } = process.env;
+
+  if (!TW_ACCESS_TOKEN || !TW_ACCESS_SECRET) {
+    logger.warn(
+      "No access token detected for publishing at Twitter. Starting authorization process..."
+    );
+
+    const { accessToken, accessSecret, pin } = await authorizeTwitterUser();
+    const client = new TwitterApi({
+      appKey: process.env.TW_API_KEY,
+      appSecret: process.env.TW_API_SECRET,
+      accessToken,
+      accessSecret,
+    });
+    const response = await client.login(pin);
+    logger.info(`Add the following properties into your .env file and then start over:
+    - TW_ACCESS_TOKEN: ${response.accessToken}
+    - TW_ACCESS_SECRET: ${response.accessSecret}`);
+
+    return false;
+  }
+  return true;
+}
+
+async function authorizeTwitterUser() {
+  prompt.start();
+  const client = new TwitterApi({
+    appKey: process.env.TW_API_KEY,
+    appSecret: process.env.TW_API_SECRET,
+  });
+  const authUrl = await client.generateAuthLink();
+  return new Promise((resolve, reject) => {
+    const schema = {
+      properties: {
+        logged: {
+          description:
+            "Log in to https://twitter.com as the user you want to tweet as and hit enter",
+          required: false,
+        },
+        visit: {
+          description: `Visit ${authUrl.url} in your browser and hit enter`,
+          required: false,
+        },
+        pin: {
+          description: "What is your PIN?",
+          pattern: /^[0-9]+$/,
+          message: "PIN has to be numbers only",
+          required: true,
+        },
+      },
+    };
+
+    prompt.get(schema, function (err, result) {
+      if (err) {
+        reject(err);
+        return;
+      }
+      resolve({
+        accessToken: authUrl.oauth_token,
+        accessSecret: authUrl.oauth_token_secret,
+        pin: result.pin,
+      });
+    });
+  });
 }
 
 async function publishToInstagram(imageBuffer, caption) {
-  const ig = new IgApiClient();
-  ig.state.generateDevice(process.env.IG_USERNAME);
+  const { IG_USERNAME: username, IG_PASSWORD: password } = process.env;
+  const igClient = new IgApiClient();
+  igClient.state.generateDevice(username);
   // ig.state.proxyUrl = process.env.IG_PROXY;
-  await ig.account.login(process.env.IG_USERNAME, process.env.IG_PASSWORD);
-  await ig.publish.photo({
+  await igClient.account.login(username, password);
+  await igClient.publish.photo({
     file: imageBuffer,
     caption: caption,
   });
@@ -91,4 +170,5 @@ export {
   prepareImage,
   publishToInstagram,
   publishToTwitter,
+  verifyCredentials,
 };
