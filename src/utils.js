@@ -63,7 +63,7 @@ async function verifyCredentials() {
 async function verifyInstagramCredentials() {
   const { IG_USERNAME: username, IG_PASSWORD: password } = process.env;
   if (!username || !password) {
-    logger.error(
+    console.error(
       `Your Instagram username and password from your profile are not defined in the config file.
       Add that info in the IG_USERNAME and IG_PASSWORD properties into your .env file and start over.`
     );
@@ -76,7 +76,7 @@ async function verifyTwitterCredentials() {
   const { TW_API_KEY: apiKey, TW_API_SECRET: apiSecret } = process.env;
 
   if (!apiKey || !apiSecret) {
-    logger.error(
+    console.error(
       `Your Twitter API Key and Secret are not defined in the config file.
       - Go to https://developer.twitter.com/en/portal/projects-and-apps
       - Select your project and then go to "Keys and tokens" section
@@ -89,7 +89,7 @@ async function verifyTwitterCredentials() {
   const { TW_ACCESS_TOKEN, TW_ACCESS_SECRET } = process.env;
 
   if (!TW_ACCESS_TOKEN || !TW_ACCESS_SECRET) {
-    logger.warn(
+    console.warn(
       "No access token detected for publishing at Twitter. Starting authorization process..."
     );
 
@@ -101,7 +101,7 @@ async function verifyTwitterCredentials() {
       accessSecret,
     });
     const response = await client.login(pin);
-    logger.info(`Add the following properties into your .env file and then start over:
+    console.info(`Add the following properties into your .env file and then start over:
     - TW_ACCESS_TOKEN: ${response.accessToken}
     - TW_ACCESS_SECRET: ${response.accessSecret}`);
 

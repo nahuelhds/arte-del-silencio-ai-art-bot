@@ -26,7 +26,7 @@ const INPUT_IMAGE_WEIGHT = ["LOW", "MEDIUM"]; // No HIGH
     }
 
     const caption = captions[random(0, captions.length - 1)];
-    logger.info(
+    console.info(
       `Building image with caption from year ${caption.year}: "${caption.text}"`
     );
 
@@ -42,24 +42,24 @@ const INPUT_IMAGE_WEIGHT = ["LOW", "MEDIUM"]; // No HIGH
         mediastore_id: uploadedImageInfo.id,
         weight,
       };
-      logger.info(`Using base image "${sourcePath}" and weight "${weight}"`);
+      console.info(`Using base image "${sourcePath}" and weight "${weight}"`);
     } else {
-      logger.info(`Without base image`);
+      console.info(`Without base image`);
     }
     const style = await getRandomStyle(api);
     const task = await api.generatePicture(
       await translateEn(caption.text),
       style.id,
       (task) => {
-        logger.log(task.state, "stage", task.photo_url_list.length);
+        console.log(task.state, "stage", task.photo_url_list.length);
       },
       inputImage
     );
     if (!task?.result.final) {
-      logger.error("No image generated");
+      console.error("No image generated");
       return;
     }
-    logger.info("Image generated: ", task?.result.final);
+    console.info("Image generated: ", task?.result.final);
 
     const imageBuffer = await prepareImage(task.result.final);
     const imageDescription = `"${caption.text}" - Año ${caption.year}.\n${
@@ -71,16 +71,16 @@ const INPUT_IMAGE_WEIGHT = ["LOW", "MEDIUM"]; // No HIGH
     }\nEstilo: ${style.name}.\n\n#marchadelsilencio2022`;
 
     const twPost = await publishToTwitter(imageBuffer, imageDescription);
-    logger.info(
+    console.info(
       "Successfully published to Twitter:",
       `https://twitter.com/${twPost.user.screen_name}/status/${twPost.id_str}`
     );
     const igPost = await publishToInstagram(imageBuffer, imageDescription);
-    logger.info(
+    console.info(
       "Successfully published to Instagram:",
       `https://instagram.com/p/${igPost.media.code}/`
     );
   } catch (err) {
-    logger.error("An error occurred in the process", err);
+    console.error("An error occurred in the process", err);
   }
 })();
