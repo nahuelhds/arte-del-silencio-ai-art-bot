@@ -3,6 +3,7 @@ import "dotenv/config";
 import { readFileSync } from "fs";
 import random from "lodash.random";
 import logger from "node-color-log";
+import path from "path";
 import WomboDreamApi from "wombo-dream-api";
 
 import captions from "../data/captions.js";
@@ -16,7 +17,6 @@ import {
   verifyCredentials,
 } from "./utils.js";
 
-const TEMP_IMAGE_PATH = "./temp/image.jpg";
 const INPUT_IMAGE_WEIGHT = ["LOW", "MEDIUM"]; // No HIGH
 
 (async () => {
@@ -36,7 +36,7 @@ const INPUT_IMAGE_WEIGHT = ["LOW", "MEDIUM"]; // No HIGH
     if (random()) {
       person = people[random(0, people.length - 1)];
       weight = INPUT_IMAGE_WEIGHT[random(0, INPUT_IMAGE_WEIGHT.length - 1)];
-      const sourcePath = person.image;
+      const sourcePath = path.join(process.cwd(), person.image);
       const uploadedImageInfo = await api.uploadImage(readFileSync(sourcePath));
       inputImage = {
         mediastore_id: uploadedImageInfo.id,
@@ -61,7 +61,7 @@ const INPUT_IMAGE_WEIGHT = ["LOW", "MEDIUM"]; // No HIGH
     }
     logger.info("Image generated: ", task?.result.final);
 
-    const imageBuffer = await prepareImage(task.result.final, TEMP_IMAGE_PATH);
+    const imageBuffer = await prepareImage(task.result.final);
     const imageDescription = `"${caption.text}" - Año ${caption.year}.\n${
       person
         ? `\nDesaparecidx: ${
